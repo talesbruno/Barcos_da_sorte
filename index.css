@@ -117,11 +117,71 @@ header {
     height: auto; 
   }
 
-  @media screen and (max-width: 768px) {
-    .buttons {
-      flex-direction: column; 
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 80px;
     }
 
+    header {
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      width: 100%;
+      padding-top: 20px;
+  }
+  
+    .content {
+      width: 100%;
+    }
+
+    .logo {
+      width: 240px;
+      height: auto;
+  }
+  
+    h1 {
+      font-size: 30px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 25px;
+    }
+  
+    p {
+      font-size: 16px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      gap: 20px;
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px;
+    }
+  
+    .btn-primary {
+      border: 2px solid black;
+      color: black;
+      background-color: transparent;
+    }
+  
+    .btn-secondary {
+      background-color: #00942a;
+      color: white;
+    }
+  
+    .icon {
+      width: 20px;
+    }
   }
 
 .horizontal-line-with-texts {
@@ -178,10 +238,10 @@ header {
 
 .image {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 584px;
+    object-fit: cover;
+    border-radius: 26px;
 }
-
 
 .box2 {
   background-color: rgba(0, 54, 132, 1);
@@ -191,62 +251,98 @@ header {
 .conteudo2 {
   z-index: 2;
   display: flex;
-    flex-direction: column; 
-    justify-content: center;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 264px;
+  padding-left: 95px;   
+  padding-right: 95px; 
+  padding-bottom: 95px;  
+  align-items: center;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+@media (max-width: 768px) {
+  /* Geral */
+  .dobra2 {
+    padding: 50px;  /* Ajuste de padding geral */
+  }
+
+  .conteudo-dobra2 {
+    margin-top: -150px;
+    width: 100%;
+  }
+
+  /* Ajustando a imagem */
+  .image-dobra2 {
+    max-width: 100%;
+    position: relative;
+    top: 130px; 
+  }
+
+  .image {
+    width: 90%;  /* Imagem um pouco menor que o container azul */
+    height: auto;
+  }
+
+  /* Box com o conteúdo */
+  .box2 {
+    width: 100%;
+    background-color: rgba(0, 54, 132, 1);
+    border-radius: 15px;
+  }
+
+  .conteudo2 {
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  /* Ajustando a linha horizontal para o mobile */
+  .horizontal-line-with-texts {
+    display: flex;
+    flex-direction: column; /* Colocando os itens um abaixo do outro */
+    gap: 20px;
     align-items: center;
+    height: auto;  /* Garantindo que o container da linha ocupe o espaço necessário */
+  }
+
+  .item {
+    flex-direction: column; /* Mudando para disposição vertical */
+    align-items: center;
+    gap: 10px;
+    height: 100%;  /* Garantindo que os itens ocupem toda a altura disponível */
+  }
+
+  .line {
+    width: 3px;
+    height: 100%;  /* Traço vertical ocupando toda a altura */
+    margin: 0;
+    flex-grow: 1;  /* Faz com que o traço ocupe a altura disponível */
+  }
+
+  /* Ajustando o texto */
+  .text {
+    font-size: 14px;  /* Font menor para dispositivos móveis */
+    text-align: center; /* Centralizando o texto */
+  }
+
+  /* Ajustando o botão */
+  .btn-tentiary {
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #0048b0;
     color: white;
-    padding-top: 264px;
-    padding-left: 95px;   
-    padding-right: 95px; 
-    padding-bottom: 95px;  
-    align-items: center;
-    width: 100%; 
-    box-sizing: border-box; 
+    border-radius: 100px;
+  }
 }
-
-@media screen and (max-width: 768px) {
-    .conteudo-dobra2 {
-        width: 90%; 
-        padding: 10px;
-    }
-    
-    .conteudo2 {
-        padding: 15px; 
-    }
-    
-    h2 {
-        font-size: 1.5em; 
-    }
-    
-    .horizontal-line-with-texts {
-        display: block; 
-        text-align: left;
-        padding-left: 10px;
-    }
-    
-    .item {
-        margin-bottom: 10px; 
-    }
-    
-    .image-dobra2 {
-        margin-bottom: 10px; 
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .conteudo2 {
-        padding: 10px; 
-    }
-    
-    h2 {
-        font-size: 1.2em; 
-    }
-    
-    .horizontal-line-with-texts {
-        font-size: 0.8em; 
-    }
-}
-
   .btn-tertiary {
     background-color: #fff;
     color: #003684;
@@ -262,11 +358,9 @@ header {
   }
 
   .conteudo-dobra2 h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
-    padding-top: 40px;
-    padding-left: 130px; 
-    padding-right: 130px; 
+    padding-top: 20px;
     padding-bottom: 30px;  
   }
 
@@ -308,7 +402,6 @@ header {
 
 .info-item p {
   font-size: 1em;
-  color: #555;
 }
 
 .cta-btn {
@@ -340,15 +433,52 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .dobra3 {
+    padding: 0 81px; /* Menos padding nas laterais em telas pequenas */
+  }
+
   .info {
     flex-direction: column; 
     align-items: center; 
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .info-item {
-    width: 100%; 
-    margin-bottom: 20px; 
-    text-align: center; 
+    display: flex;
+    flex-direction: column; /* Garante que o h3 e p fiquem na coluna */
+    align-items: flex-start; /* Alinha à esquerda */
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .info-item h3 {
+    font-size: 1.2em; /* Reduzindo o tamanho do título */
+    margin-bottom: 8px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+    margin: 0; /* Removendo qualquer margem do parágrafo */
+    padding: 0; /* Garantindo que não haja padding */
+  }
+
+  .cta-btn {
+    padding: 23px;
+    font-size: 14px
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
   }
 }
 
@@ -419,46 +549,6 @@ iframe {
   gap: 40px; 
 }
 
-.component-text {
-  flex-grow: 0; 
-  text-align: left;
-  max-width: 400px; 
-}
-
-.component-video {
-  flex-grow: 1; 
-  flex-shrink: 0; 
-  width: 100%; 
-  max-width: 514px;
-}
-
-.component-video iframe {
-  width: 100%; 
-  height: 290px;
-  border-radius: 25px;
-}
-
-@media (max-width: 768px) {
-  .component-body {
-    flex-direction: column; 
-    align-items: center; 
-  }
-
-  .component-text {
-    width: 100%; 
-    margin-right: 0; 
-    margin-bottom: 15px; 
-  }
-
-  .component-video {
-    width: 100%; 
-  }
-
-  .component-video iframe {
-    height: 200px; 
-  }
-}
-
 .ganhador {
   font-size: 1.3750em;
   font-weight: 500;
@@ -486,6 +576,96 @@ iframe {
   line-height: 24px;
 }
 
+.component-text {
+  flex-grow: 0; 
+  text-align: left;
+  max-width: 400px; 
+}
+
+.component-video {
+  flex-grow: 1; 
+  flex-shrink: 0; 
+  width: 100%; 
+  max-width: 514px;
+}
+
+.component-video iframe {
+  width: 100%; 
+  height: 290px;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .dobra5{
+    padding: 0 80px;
+  }
+  /* Em dispositivos móveis, alteramos o comportamento para empilhar o texto e o vídeo corretamente */
+  .component {
+    flex-direction: column; /* Empilha texto e vídeo */
+    align-items: center; /* Centraliza os itens */
+    width: 100%;
+  }
+
+  .component-text p {
+    padding: 0;
+    margin-bottom: 4px;
+  }
+  
+
+  .component-body {
+    flex-direction: column; /* Empilha o conteúdo de texto e vídeo */
+    gap: 30px; /* Ajuste do espaçamento entre texto e vídeo */
+  }
+
+  .component-text .line {
+    width: 100%;
+    height: 2px;
+    border-radius: 28px;
+    background-color: rgba(0, 72, 176, 1);
+    margin-bottom: 6px; 
+  }
+
+  /* Garantir que o texto ocupe 100% da largura e esteja centralizado */
+  .component-text {
+    max-width: 100%; /* Faz o texto ocupar toda a largura possível */
+    text-align: start; /* Alinha o texto ao centro */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Garantir que o vídeo ocupe 100% da largura disponível */
+  .component-video {
+    max-width: 100%; 
+  }
+
+  .component-video iframe {
+    height: 250px; /* Ajusta a altura do iframe para telas menores */
+  }
+
+  .cta-btn5 {
+    padding-top: 12px;
+    padding-left: 30px;   
+    padding-right: 30px; 
+    padding-bottom: 12px;  
+    font-size: 14px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+  }
+
+  .section-title {
+    font-size: 30px; /* Reduz o tamanho do título em telas menores */
+    margin-bottom: 30px;
+  }
+}
+
+/* Garantir ordem correta em dispositivos móveis utilizando o `order` */
+@media (max-width: 768px) {
+  .component-text {
+    order: 1; /* Texto sempre aparece antes do vídeo */
+  }
+  
+  .component-video {
+    order: 2; /* Vídeo sempre aparece após o texto */
+  }
+}
 
 .dobra6{
   display: flex;
@@ -687,4 +867,19 @@ iframe {
   position: relative;
   width: 100%; 
   max-width: 1280px; 
+}
+
+@media (max-width: 768px) {
+  .conteudo-dobra4{
+    padding-top: 36px;
+  }
+  .slide img {
+    height: 112px; /* Ajuste o tamanho das imagens para telas menores */
+    margin: 0 2px; /* Menos margem entre as imagens */
+    border-radius: 8px;
+  }
+
+  .texto img {
+    width: 100%; /* Reduzir o tamanho do logo no texto */
+  }
 }
