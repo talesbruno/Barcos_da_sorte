@@ -224,7 +224,6 @@ header {
     text-align: center;
 }
 
-/* Centralizando a imagem */
 .image-dobra2 {
   display: flex;
   justify-content: center;
@@ -265,9 +264,8 @@ header {
 }
 
 @media (max-width: 768px) {
-  /* Geral */
   .dobra2 {
-    padding: 50px;  /* Ajuste de padding geral */
+    padding: 50px;  
   }
 
   .conteudo-dobra2 {
@@ -275,7 +273,6 @@ header {
     width: 100%;
   }
 
-  /* Ajustando a imagem */
   .image-dobra2 {
     max-width: 100%;
     position: relative;
@@ -283,11 +280,11 @@ header {
   }
 
   .image {
-    width: 90%;  /* Imagem um pouco menor que o container azul */
+    width: 90%;  
     height: auto;
   }
 
-  /* Box com o conteúdo */
+  
   .box2 {
     width: 100%;
     background-color: rgba(0, 54, 132, 1);
@@ -301,36 +298,33 @@ header {
     padding-bottom: 40px;
   }
 
-  /* Ajustando a linha horizontal para o mobile */
   .horizontal-line-with-texts {
     display: flex;
-    flex-direction: column; /* Colocando os itens um abaixo do outro */
+    flex-direction: column; 
     gap: 20px;
     align-items: center;
-    height: auto;  /* Garantindo que o container da linha ocupe o espaço necessário */
+    height: auto;  
   }
 
   .item {
-    flex-direction: column; /* Mudando para disposição vertical */
+    flex-direction: column; 
     align-items: center;
     gap: 10px;
-    height: 100%;  /* Garantindo que os itens ocupem toda a altura disponível */
+    height: 100%;  
   }
 
   .line {
     width: 3px;
-    height: 100%;  /* Traço vertical ocupando toda a altura */
+    height: 100%; 
     margin: 0;
-    flex-grow: 1;  /* Faz com que o traço ocupe a altura disponível */
+    flex-grow: 1;  
   }
 
-  /* Ajustando o texto */
   .text {
-    font-size: 14px;  /* Font menor para dispositivos móveis */
-    text-align: center; /* Centralizando o texto */
+    font-size: 14px; 
+    text-align: center; 
   }
 
-  /* Ajustando o botão */
   .btn-tentiary {
     padding-top: 15px;
     padding-left: 40px;
@@ -434,7 +428,7 @@ iframe {
 
 @media (max-width: 768px) {
   .dobra3 {
-    padding: 0 81px; /* Menos padding nas laterais em telas pequenas */
+    padding: 0 81px;
   }
 
   .info {
@@ -446,22 +440,22 @@ iframe {
 
   .info-item {
     display: flex;
-    flex-direction: column; /* Garante que o h3 e p fiquem na coluna */
-    align-items: flex-start; /* Alinha à esquerda */
+    flex-direction: column; 
+    align-items: flex-start;
     width: 100%;
     margin-bottom: 30px;
     text-align: left;
   }
 
   .info-item h3 {
-    font-size: 1.2em; /* Reduzindo o tamanho do título */
+    font-size: 1.2em;
     margin-bottom: 8px;
   }
 
   .info-item p {
     font-size: 14px;
-    margin: 0; /* Removendo qualquer margem do parágrafo */
-    padding: 0; /* Garantindo que não haja padding */
+    margin: 0; 
+    padding: 0; 
   }
 
   .cta-btn {
@@ -599,22 +593,48 @@ iframe {
   .dobra5{
     padding: 0 80px;
   }
-  /* Em dispositivos móveis, alteramos o comportamento para empilhar o texto e o vídeo corretamente */
+  
   .component {
-    flex-direction: column; /* Empilha texto e vídeo */
-    align-items: center; /* Centraliza os itens */
+    margin-bottom: 50px;
+    flex-direction: column; 
+    align-items: center; 
     width: 100%;
   }
 
   .component-text p {
     padding: 0;
+  }
+
+  .ganhador {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 4px
+  }
+  
+  .valor{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 21px;
+  }
+  
+  .premio{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
     margin-bottom: 4px;
   }
   
-
+  .data{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
   .component-body {
-    flex-direction: column; /* Empilha o conteúdo de texto e vídeo */
-    gap: 30px; /* Ajuste do espaçamento entre texto e vídeo */
+    flex-direction: column; 
+    gap: 30px; 
   }
 
   .component-text .line {
@@ -625,21 +645,21 @@ iframe {
     margin-bottom: 6px; 
   }
 
-  /* Garantir que o texto ocupe 100% da largura e esteja centralizado */
+  
   .component-text {
-    max-width: 100%; /* Faz o texto ocupar toda a largura possível */
-    text-align: start; /* Alinha o texto ao centro */
+    max-width: 100%; 
+    text-align: start; 
     margin: 0;
     padding: 0;
   }
 
-  /* Garantir que o vídeo ocupe 100% da largura disponível */
   .component-video {
     max-width: 100%; 
   }
 
   .component-video iframe {
-    height: 250px; /* Ajusta a altura do iframe para telas menores */
+    height: 180px;
+    border-radius: 15px;
   }
 
   .cta-btn5 {
@@ -647,31 +667,30 @@ iframe {
     padding-left: 30px;   
     padding-right: 30px; 
     padding-bottom: 12px;  
-    font-size: 14px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    font-size: 14px; 
   }
 
   .section-title {
-    font-size: 30px; /* Reduz o tamanho do título em telas menores */
+    font-size: 30px; 
     margin-bottom: 30px;
   }
 }
 
-/* Garantir ordem correta em dispositivos móveis utilizando o `order` */
 @media (max-width: 768px) {
   .component-text {
-    order: 1; /* Texto sempre aparece antes do vídeo */
+    order: 1; 
   }
   
   .component-video {
-    order: 2; /* Vídeo sempre aparece após o texto */
+    order: 2; 
   }
 }
 
 .dobra6{
   display: flex;
   padding-bottom: 105px;
+  flex-direction: row;
 }
-
 
 .conteudo-dobra6 {
   display: flex;
@@ -691,7 +710,6 @@ iframe {
   color: rgba(0, 72, 176, 1);
   font-weight: 700;
   font-size: 18px;
-  font-weight: normal;  
   margin-bottom: 5px;
 }
 
@@ -702,24 +720,26 @@ iframe {
 }
 
 .whatsapp-block {
-  width: 208px;  
-  position: absolute;
-  bottom: 20px;  
-  left: 20px; 
-  margin-top: 30px;
+  position: absolute; 
+  bottom: 20px; 
+  left: 20px;
+  width: 208px;
 }
+
 .whatsapp-text-bold {
   font-weight: bold;
   font-size: 16px;
   color: #333;
   margin-bottom: 5px;  
 }
+
 .whatsapp-text-normal {
   font-weight: normal;
   font-size: 14px;
   color: #333;
   margin-bottom: 10px;  
 }
+
 .faq-title {
   font-size: 42px;
   font-weight: 700;  
@@ -743,13 +763,14 @@ iframe {
   transform: scale(1.1);
 }
 
-
 .right-column {
   width: 65%;
 }
+
 .questions-block {
   width: 298px;  
 }
+
 .faq-item {
   border-bottom: 1px solid rgba(28, 28, 28, 1);
   margin-bottom: 10px;
@@ -787,6 +808,85 @@ iframe {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .dobra6 {
+    flex-direction: column; 
+    padding-bottom: 75px;
+  }
+
+  .conteudo-dobra6 {
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+    padding: 0 80px;
+  }
+
+  .doubts-text {
+    color: rgba(0, 72, 176, 1);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .faq-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .check-our {
+    font-size: 16px;
+    font-weight: bold;  
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+
+  .whatsapp-block {
+    position: relative;
+    margin-top: 30px; 
+    left: auto;
+    right: auto;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    justify-content: flex-start; 
+    flex-direction: row-reverse;
+  }
+
+  .faq-question {
+    font-size: 16px; 
+    padding: 15px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .whatsapp-icon img {
+    width: 66px;
+    height: 66px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .whatsapp-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+}
 .footer {
   background-color: rgba(0, 54, 132, 1); 
   color: white;              
@@ -874,12 +974,28 @@ iframe {
     padding-top: 36px;
   }
   .slide img {
-    height: 112px; /* Ajuste o tamanho das imagens para telas menores */
-    margin: 0 2px; /* Menos margem entre as imagens */
+    height: 112px;
+    margin: 0 2px;
     border-radius: 8px;
   }
 
   .texto img {
-    width: 100%; /* Reduzir o tamanho do logo no texto */
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 15px 80px;
+  }
+
+  .footer-logo {
+    width: 280px; 
+  }
+
+  .footer-text {
+    font-size: 14px; 
   }
 }
