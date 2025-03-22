@@ -119,17 +119,19 @@ header {
 
   @media (max-width: 768px) {
     .main-content {
-      padding: 80px;
+      padding: 30px 80px;
     }
-
     header {
       display: flex;
       justify-content: center; 
       align-items: center;     
       width: 100%;
-      padding-top: 20px;
+      padding-top: 40px;
   }
   
+  .logo {
+      width: 240px;
+  }
     .content {
       width: 100%;
     }
@@ -269,7 +271,7 @@ header {
   }
 
   .conteudo-dobra2 {
-    margin-top: -150px;
+    margin-top: -180px;
     width: 100%;
   }
 
@@ -284,7 +286,6 @@ header {
     height: auto;
   }
 
-  
   .box2 {
     width: 100%;
     background-color: rgba(0, 54, 132, 1);
@@ -326,6 +327,7 @@ header {
   }
 
   .btn-tentiary {
+    margin: 15px 0;
     padding-top: 15px;
     padding-left: 40px;
     padding-right: 40px;
@@ -645,7 +647,6 @@ iframe {
     margin-bottom: 6px; 
   }
 
-  
   .component-text {
     max-width: 100%; 
     text-align: start; 
@@ -663,6 +664,7 @@ iframe {
   }
 
   .cta-btn5 {
+    margin-bottom: 20px;
     padding-top: 12px;
     padding-left: 30px;   
     padding-right: 30px; 
@@ -847,7 +849,6 @@ iframe {
   .right-column {
     width: 100%;
   }
-
 
   .whatsapp-block {
     position: relative;
