@@ -120,7 +120,7 @@ header {
 
   @media (max-width: 768px) {
     .main-content {
-      padding: 30px 55px;
+      padding: 30px 20px;
     }
     header {
       display: flex;
@@ -275,7 +275,7 @@ header {
 
 @media (max-width: 768px) {
   .dobra2 {
-    padding: 50px 55px;  
+    padding: 50px 20px;  
   }
 
   .conteudo-dobra2 {
@@ -437,7 +437,7 @@ iframe {
 
 @media (max-width: 768px) {
   .dobra3 {
-    padding: 0 55px;
+    padding: 0 20px;
   }
 
   .info {
@@ -603,7 +603,7 @@ iframe {
 
 @media (max-width: 768px) {
   .dobra5{
-    padding: 0 55px;
+    padding: 20px 20px;
   }
   
   .component {
@@ -700,7 +700,7 @@ iframe {
 
 .dobra6{
   display: flex;
-  padding: 55px 55px;
+  padding: 55px 20px;
   flex-direction: row;
 }
 
@@ -823,7 +823,7 @@ iframe {
 @media (max-width: 768px) {
   .dobra6 {
     flex-direction: column; 
-    padding: 0 55px;
+    padding: 0 20px;
   }
 
   .conteudo-dobra6 {
@@ -981,6 +981,10 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .dobra4 {
+    padding: 30px 20px;
+  }
+
   .slide img {
     height: 112px;
     margin: 0 2px;
