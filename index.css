@@ -92,16 +92,18 @@ header {
   }
 
   .btn-tentiary {
-    padding-top: 15px;  
-    padding-left: 40px;   
-    padding-right: 40px;     
-    padding-bottom: 15px;  
+    padding: 15px 40px;
     font-size: 16px;
     font-weight: 400;
     background-color: #0048b0;
     color: white;
     border-radius: 100px;
   }
+
+  .conteudo2 .btn-tentiary:hover {
+    background-color: #165bbb;
+  }
+  
   
   .btn-secondary:hover {
     background-color: #218838;
@@ -111,7 +113,6 @@ header {
     background-color: #f0f8ff; 
   }
   
- 
   .icon {
     width: 17px;  
     height: auto; 
@@ -237,6 +238,13 @@ header {
   z-index: 1;
 }
 
+.conteudo-dobra2 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 30px 90px;
+}
+
+
 .image {
     width: 100%;
     height: 584px;
@@ -256,7 +264,7 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
-  padding-top: 264px;
+  padding-top: 244px;
   padding-left: 95px;   
   padding-right: 95px; 
   padding-bottom: 95px;  
@@ -271,7 +279,7 @@ header {
   }
 
   .conteudo-dobra2 {
-    margin-top: -180px;
+    margin-top: -150px;
     width: 100%;
   }
 
@@ -293,10 +301,16 @@ header {
   }
 
   .conteudo2 {
-    padding-top: 150px;
+    padding-top: 160px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
+  }
+
+  .conteudo-dobra2 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0;
   }
 
   .horizontal-line-with-texts {
@@ -327,11 +341,7 @@ header {
   }
 
   .btn-tentiary {
-    margin: 15px 0;
-    padding-top: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 15px;
+    padding: 15px 40px;
     font-size: 16px;
     font-weight: 400;
     background-color: #0048b0;
@@ -349,15 +359,8 @@ header {
   }
   
   .btn-tertiary:hover {
-    background-color: #003684;
+    background-color: #3b81e4;
     color: white;
-  }
-
-  .conteudo-dobra2 h2 {
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 30px;  
   }
 
   .dobra3 {
@@ -365,7 +368,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 55px;
+    padding: 0 55px;
 }
 
 .conteudo-dobra3 {
@@ -412,8 +415,12 @@ header {
   border-radius: 100px;
 }
 
+.conteudo-dobra3 .cta-btn:hover {
+  background-color: #0bb83c;
+}
+
 .cta-btn:hover {
-  background-color: #0056b3;
+  background-color: #0bb83c;
 }
 
 .video-container {
@@ -483,14 +490,13 @@ iframe {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 59px;
+    padding: 70px 55px;
 }
 
 .conteudo-dobra5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 73px;
   width: 100%; 
   max-width: 1280px; 
 }
@@ -506,6 +512,10 @@ iframe {
   color: white;
   border-radius: 100px;
   margin-bottom: 40px;
+}
+
+.conteudo-dobra5 .cta-btn5:hover {
+  background-color: #0056b3;
 }
 
 .cta-btn5:hover {
@@ -690,7 +700,7 @@ iframe {
 
 .dobra6{
   display: flex;
-  padding-bottom: 105px;
+  padding: 55px 55px;
   flex-direction: row;
 }
 
@@ -813,14 +823,12 @@ iframe {
 @media (max-width: 768px) {
   .dobra6 {
     flex-direction: column; 
-    padding-bottom: 75px;
   }
 
   .conteudo-dobra6 {
     flex-direction: column;
     align-items: center; 
     gap: 20px;
-    padding: 0 80px;
   }
 
   .doubts-text {
@@ -962,6 +970,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 55px;
 }
 
 .conteudo-dobra4 {
@@ -971,8 +980,8 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  .conteudo-dobra4{
-    padding-top: 36px;
+  .conteudo4{
+    padding: 0 36px;
   }
   .slide img {
     height: 112px;
