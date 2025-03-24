@@ -91,10 +91,10 @@ header {
     border-radius: 100px;
   }
 
-  .btn-tentiary {
+  .conteudo2 .btn-tentiary {
     padding: 15px 40px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 100;
     background-color: #0048b0;
     color: white;
     border-radius: 100px;
@@ -313,31 +313,9 @@ header {
     padding: 20px 0;
   }
 
-  .horizontal-line-with-texts {
-    display: flex;
-    flex-direction: column; 
-    gap: 20px;
-    align-items: center;
-    height: auto;  
-  }
-
-  .item {
-    flex-direction: column; 
-    align-items: center;
-    gap: 10px;
-    height: 100%;  
-  }
-
-  .line {
-    width: 3px;
-    height: 100%; 
-    margin: 0;
-    flex-grow: 1;  
-  }
-
   .text {
     font-size: 14px; 
-    text-align: center; 
+    text-align: left;
   }
 
   .btn-tentiary {
@@ -348,7 +326,37 @@ header {
     color: white;
     border-radius: 100px;
   }
+
+  .horizontal-line-with-texts {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 100%;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 90%;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 72, 176, 1); 
+    border-radius: 109px;
+  }
+
+  .text {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center; 
+  }
 }
+
+
+
   .btn-tertiary {
     background-color: #fff;
     color: #003684;
@@ -480,7 +488,7 @@ iframe {
 
   iframe {
     width: 100%;
-    height: 180px;
+    height: 250px;
     border-radius: 15px;
   }
 }
@@ -501,15 +509,11 @@ iframe {
   max-width: 1280px; 
 }
 
-.cta-btn5 {
-  padding-top: 15px;  
-  padding-left: 40px;   
-  padding-right: 40px; 
-  padding-bottom: 15px;  
+.conteudo-dobra5 .cta-btn5 {
+  padding: 15px 40px;
   font-size: 16px;
-  font-weight: 400;
   background-color: #0048b0;
-  color: white;
+  color: rgba(255, 255, 255, 1);
   border-radius: 100px;
   margin-bottom: 40px;
 }
@@ -603,7 +607,7 @@ iframe {
 
 @media (max-width: 768px) {
   .dobra5{
-    padding: 20px 20px;
+    padding: 30px 20px;
   }
   
   .component {
@@ -669,7 +673,7 @@ iframe {
   }
 
   .component-video iframe {
-    height: 180px;
+    height: 250px;
     border-radius: 15px;
   }
 
@@ -986,7 +990,8 @@ iframe {
   }
 
   .slide img {
-    height: 112px;
+    width: 350px;
+    height: 250px;
     margin: 0 2px;
     border-radius: 8px;
   }
