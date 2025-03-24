@@ -14,3 +14,10 @@ document.querySelectorAll('.faq-question').forEach(question => {
     }
   });
 });
+
+
+function smoothScroll() {
+  const section = document.getElementById("ganhadores");
+  section.scrollIntoView({ behavior: "smooth" });
+}
+

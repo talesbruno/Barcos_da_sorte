@@ -69,10 +69,7 @@ header {
   }
   
   .btn-primary {
-    padding-top: 29.5px;  
-    padding-left: 49px;  
-    padding-right: 49px;     
-    padding-bottom: 29.5px;  
+    padding: 29.5px 49px;  
     font-size: 20px;
     background-color: transparent; 
     border: 2px solid black; 
@@ -81,10 +78,7 @@ header {
   }
 
   .btn-secondary {
-    padding-top: 29.5px;  
-    padding-left: 49px;   
-    padding-right: 49px;     
-    padding-bottom: 29.5px;  
+    padding: 29.5px 49px;  
     font-size: 20px;
     background-color: #00942a;
     color: white;
@@ -94,7 +88,8 @@ header {
   .conteudo2 .btn-tentiary {
     padding: 15px 40px;
     font-size: 16px;
-    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     background-color: #0048b0;
     color: white;
     border-radius: 100px;
@@ -164,10 +159,7 @@ header {
   
     .btn-primary,
     .btn-secondary {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding: 20px 40px;
       font-size: 18px;
     }
   
@@ -318,10 +310,11 @@ header {
     text-align: left;
   }
 
-  .btn-tentiary {
+  .conteudo2 .btn-tentiary {
     padding: 15px 40px;
     font-size: 16px;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     background-color: #0048b0;
     color: white;
     border-radius: 100px;
@@ -354,12 +347,11 @@ header {
     text-align: center; 
   }
 }
-
-
-
   .btn-tertiary {
     background-color: #fff;
     color: #003684;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     border: none;
     border-radius: 25px;
     font-size: 16px;
@@ -512,6 +504,8 @@ iframe {
 .conteudo-dobra5 .cta-btn5 {
   padding: 15px 40px;
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   background-color: #0048b0;
   color: rgba(255, 255, 255, 1);
   border-radius: 100px;
