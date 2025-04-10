@@ -781,6 +781,7 @@ iframe {
 
 .faq-question {
   background: none;
+  color: #000000;
   border: none;
   font-weight: 600;
   width: 100%;
@@ -790,7 +791,6 @@ iframe {
   align-items: center;
   justify-content: flex-start; 
   cursor: pointer;
-  transition: background-color 0.3s;
   text-align: left; 
 }
 
@@ -864,6 +864,7 @@ iframe {
   }
 
   .faq-question {
+    color: #000000;
     font-size: 14px; 
     padding: 15px 0;
   }
@@ -932,11 +933,11 @@ iframe {
   display: flex;
   max-width: 1280px;
   flex-direction: column;
-  align-items: center;  /* Centraliza horizontalmente */
+  align-items: center; 
   text-align: center;
   padding: 100px;
-  justify-content: center; /* Alinha verticalmente ao centro */
-  margin: 0 auto; /* Centraliza o conteúdo */
+  justify-content: center; 
+  margin: 0 auto;
 }
 
 .slider-wrapper {
@@ -1006,7 +1007,7 @@ iframe {
 .texto {
   position: relative;
   display: flex;
-  justify-content: center; /* Centraliza a imagem dentro da div */
+  justify-content: center;
   overflow: visible;
 }
 
