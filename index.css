@@ -814,7 +814,7 @@ iframe {
 @media (max-width: 768px) {
   .dobra6 {
     flex-direction: column; 
-    padding: 0 20px;
+    padding: 20px 20px;
   }
 
   .conteudo-dobra6 {
@@ -864,13 +864,13 @@ iframe {
   }
 
   .faq-question {
-    font-size: 16px; 
-    padding: 15px;
+    font-size: 14px; 
+    padding: 15px 0;
   }
 
   .faq-answer {
-    font-size: 14px;
-    padding: 15px;
+    font-size: 12px;
+    padding: 15px 0;
   }
 
   .whatsapp-icon img {
